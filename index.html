@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pepsi Challenge</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="containers" v-bind:class="{ container: isHere }">
+        <!-- <div class="container"> -->
+                <!-- <div id="app-9" v-bind:class="{'text-danger':hasError }"> -->
+        <ul>
+            <li class="logo-img"><a><img src="./images/pepsi-logo-removebg-preview.png" class="logo"></a></li>
+            <li><a href="#" class="active">Blog</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Home </a></li>
+        </ul>
+        <!-- <div id="text-cont" v-bind:class="[activeClass]"> -->
+        <div class="row">
+            <div class="column left">
+                <h1 class="title">THAT'S WHAT </h1>
+                <p class="sub-title">I LIKE</p>
+                <p class="subsub-title"> Pepsi is a drink just like every other drink, although I sicerely think it's not worth the hype. Why am I bothering with designning this since I don't like the drink that much? I don't think I'm in a position to answer that question. </p>
+                <button id="botton" v-bind:style="{color: activeColor, padding:activePad + 'px'}" href="#">Get the Taste</button>
+            </div>
+            <div class="column right">
+                <img class="coke" src="./images/pepsi-black-removebg-preview.png">
+            </div>
+        </div>
+        <div class="coke-images" style="color:#fff">
+            <img class="columns column1" src="./images/pepsi-ash-removebg-preview.png">
+            <img class="columns column2" src="./images/pepsi-black-removebg-preview.png">
+            <img class="columns column3" src="./images/pepsi-removebg-preview.png">
+        </div>
+    </div>    
+<script src="./index.js"></script>
+</body>
+</html>
